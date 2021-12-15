@@ -30,7 +30,7 @@ Model | ROC AUC Score <br> (Train)| ROC AUC Score <br> (Test)| 5 most important 
 max_depth = 3, n_estimators = 300, <br> colsample_bytree = .5, subsample = 0.45| 0.959023| 0.556974 | user_rating_min, user_nmovies_low, <br> user_rating_max,user_nmovies_high, <br> genres_rating_promedio
 max_depth = 3, n_estimators = 400, <br> colsample_bytree = .5, subsample = 0.45|0.959531| 0.571637| user_nmovies_low, user_rating_min, <br> user_rating_max, user_nmovies_high, <br>  genres_rating_promedio
 
-Even when these two simple models could not be enough to obtain sound conclusions, just for didactic interpretation purpouses we can say that users idiosyncrasy (estimated through historic data) is mostly determinant on his future preferences. Also it is worth to mention that a genre indicator shown some importance in these models. 
+Even when these two simple models could not be enough to obtain sound conclusions, just for didactic interpretation purpouses we can say that users idiosyncrasy (estimated through historic data) is mostly determinant on their future preferences. Also it is worth to mention that a genre indicator showed some importance in these models. 
 
  ## Ideas worth to explore
  + Increase size of data used. Because of resources, only a random sample of 50,000 records were used. It would be worth to increase this number. 
