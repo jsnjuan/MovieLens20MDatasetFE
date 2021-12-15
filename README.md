@@ -7,8 +7,19 @@ This repo contains a practice whose main porpouse was to make feature engineerin
 
 ## Dataset
 
-MovieLens 20M Dataset contains 20,000,263 ratings and 465,564 tag applications across 27,278 movies. Database that was used in this excercise was taken from kaggle. Original database and description can be found in this [link] (https://grouplens.org/datasets/movielens/)
+MovieLens 20M Dataset contains 20,000,263 ratings and 465,564 tag applications across 27,278 movies. Database that was used in this excercise was taken from kaggle. Original database and description can be found in this [link](https://grouplens.org/datasets/movielens/)
 
 ## Modeling considerations
 
-Model structure con
+Main assumptions on the problem that governed the feature engineering process were the following:
+
+* Database is a panel, because it contains observations from user's movies ratings through time. We considered each set of user's ratings as a time series. Because of this, training set was made of historical ratings from the user (80%), and test set (20%) was user's new ratings made after the most recent rating from training set. With this consideration, the evolution of the user's _taste_ through time is being captured. Also, features were generated only on purely historical data, supposedly available.
+
+* Idiosyncratic effects. Trying to controlate the most the users personal taste, statistics user's rating related were generated. Two kinds were considered at first: general and by-genre user's statistics.
+* Movie's genre own effects. Under the hypothesis that there could be genres that has own effect by themselves (similar to the user's ratings logic), genres (single and combined) statistics were generated.
+
+ ## Future ideas
+ 
+ + Tag variables and genome importance were not considered because of time. One first approach is to follow same user's ratings statistics generation approach 
+ + Top 100 imdb movies. It is (from my very personal opinion) a very high probability that the one hundred top movies ranked by IMDB is from general acceptance. With that intuition in mind, it is worth to explore statistics generated for each of these movies.
+ + More deep specific personalisation. 
