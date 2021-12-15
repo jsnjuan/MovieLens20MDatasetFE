@@ -22,7 +22,7 @@ Main assumptions on the problem that governed the feature engineering process we
 + **Platform**. Kaggle notebook editor was the selected platform to implement and run the exercise. Main advantage is that kaggle offers a very complete data science python environment just waiting to run lines of code. Computational resources offered by Kaggle are also an advantage, those can even be considered above an average personal computer.
 + **Algorithm**. ML algorithm choosen was xgboost. The only consideration taken into account to  use xgboost is that the author of this repo already had an almost-ready-to-use template for this type of problem. Also, a simple DNN was considered as a very basic baseline model at first, in order to warm-up the data process.
 + **Hyperparameters**. The selection was mainly because of the lack of resources. First parameters to adjust would be max depth (to make the interaction between features more complex) and to increase the number of estimators (because of the size of the database).
-+ **Feature importance**. 
++ **Feature importance**. Default xgboost feature importance was considered just for convenience. 
 +  **Results**. Results obtained from three xgboost models are shown below. Also, first 5 important features are listed by each model.
 
 Model | ROC AUC Score <br> (Train)| ROC AUC Score <br> (Test)| 5 most important features<br>(in descending order)
