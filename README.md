@@ -20,6 +20,5 @@ Main assumptions on the problem that governed the feature engineering process we
 
  ## Future ideas
  
- + Tag variables and genome importance were not considered because of time. One first approach is to follow same user's ratings statistics generation approach 
- + Top 100 imdb movies. It is (from my very personal opinion) a very high probability that the one hundred top movies ranked by IMDB is from general acceptance. With that intuition in mind, it is worth to explore statistics generated for each of these movies.
- + More deep specific personalisation. 
+ + Tag variables and genome importance were not considered because of time. One first approach is to follow same user's ratings statistics generation approach.
+ + Top 100 imdb movies. Besides the movie's genre own effects, There is (from my very personal opinion) a very high probability that the one hundred top movies ranked by IMDB are from general acceptance. With that intuition on mind, it is worth to explore statistics generated for each of these movies, either at single movies level, or even interacting information from this movies with user's information (wheter this user has alredady seen one particular movie or not, how many of these movies the users has already seen or not, which was the particular rating for each of these movies, etc.).
