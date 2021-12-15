@@ -33,6 +33,6 @@ max_depth = 3, n_estimators = 400, <br> colsample_bytree = .5, subsample = 0.45|
 Even when these two simple models could not be enough to obtain sound conclusions, just for didactic interpretation purpouses we can say that users idiosyncrasy (estimated through historic data) is mostly determinant on his future preferences. Also it is worth to mention that a genre indicator shown some importance in these models. 
 
  ## Ideas worth to explore
- 
+ + Increase size of data used. Because of resources, only a random sample of 50,000 records were used. It would be worth to increase this number. 
  + Tag variables and genome importance were not considered because of time. One first approach is to follow same user's ratings statistics generation approach.
  + Top 100 imdb movies. Besides the movie's genre own effects, There is (from my very personal opinion) a very high probability that the one hundred top movies ranked by IMDB are from general acceptance. With that intuition on mind, it is worth to explore statistics generated for each of these movies, either at single movies level, or even interacting information from this movies with user's information (wheter this user has alredady seen one particular movie or not, how many of these movies the users has already seen or not, which was the particular rating for each of these movies, etc.).
