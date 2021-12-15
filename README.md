@@ -3,7 +3,7 @@ MovieLens 20M Dataset - Feature Engineering Challenge
 
 ## Description
 
-This repo contains a practice whose main porpouse was to make feature engineering on the MovieLens database. General target was to construct a model to predict whether a user will rate high or low a new movie, using available information.
+This repo contains a practice whose main porpouse was to make feature engineering on the MovieLens database. General objective was to construct a model to predict whether a user will rate high or low a new movie, using available information.
 
 ## Dataset
 
